@@ -12,6 +12,8 @@
 		180B7BA41E94D4D300431590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180B7BA21E94D4D300431590 /* Main.storyboard */; };
 		180B7BA61E94D4D300431590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B7BA51E94D4D300431590 /* Assets.xcassets */; };
 		180B7BA91E94D4D300431590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180B7BA71E94D4D300431590 /* LaunchScreen.storyboard */; };
+		180B7BB21E94D52400431590 /* RAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B7BB11E94D52400431590 /* RAConfiguration.swift */; };
+		180B7BB41E94DBA100431590 /* RAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B7BB31E94DBA100431590 /* RAButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		180B7BA51E94D4D300431590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180B7BA81E94D4D300431590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180B7BAA1E94D4D400431590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180B7BB11E94D52400431590 /* RAConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAConfiguration.swift; sourceTree = "<group>"; };
+		180B7BB31E94DBA100431590 /* RAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,22 @@
 			children = (
 				180B7B9E1E94D4D200431590 /* AppDelegate.swift */,
 				180B7BA01E94D4D300431590 /* ViewController.swift */,
+				180B7BB01E94D50D00431590 /* RAButton */,
 				180B7BA21E94D4D300431590 /* Main.storyboard */,
 				180B7BA51E94D4D300431590 /* Assets.xcassets */,
 				180B7BA71E94D4D300431590 /* LaunchScreen.storyboard */,
 				180B7BAA1E94D4D400431590 /* Info.plist */,
 			);
 			path = ReviewButtonAnimation;
+			sourceTree = "<group>";
+		};
+		180B7BB01E94D50D00431590 /* RAButton */ = {
+			isa = PBXGroup;
+			children = (
+				180B7BB11E94D52400431590 /* RAConfiguration.swift */,
+				180B7BB31E94DBA100431590 /* RAButton.swift */,
+			);
+			path = RAButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +110,7 @@
 				TargetAttributes = {
 					180B7B9A1E94D4D200431590 = {
 						CreatedOnToolsVersion = 8.3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -136,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180B7BB41E94DBA100431590 /* RAButton.swift in Sources */,
 				180B7BA11E94D4D300431590 /* ViewController.swift in Sources */,
 				180B7B9F1E94D4D300431590 /* AppDelegate.swift in Sources */,
+				180B7BB21E94D52400431590 /* RAConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,10 +276,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReviewButtonAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Joyce.ReviewButtonAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,10 +290,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReviewButtonAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Joyce.ReviewButtonAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -299,6 +319,7 @@
 				180B7BAF1E94D4D400431590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
